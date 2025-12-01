@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Relations - 노바돔</title>
+    <meta name="description" content="노바돔 투자자 관계 정보. IR 문의 및 간단한 투자 정보를 확인하세요.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>노바돔</h2>
+                <span class="logo-subtitle">Novadorm</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">홈으로</a></li>
+                <li><a href="#ir-info" class="nav-link">IR 정보</a></li>
+                <li><a href="#ir-contact" class="nav-link">IR 문의</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- IR 헤더 섹션 -->
+    <section id="ir-info" class="ir-header">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Investor Relations</h2>
+                <p class="section-subtitle">노바돔의 투자 정보를 확인하세요</p>
+            </div>
+            
+            <div class="ir-summary">
+                <div class="ir-card">
+                    <div class="ir-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>회사 개요</h3>
+                    <p>노바돔은 청년 글로벌 기숙사 플랫폼으로, 외국인 유학생과 국내 청년을 위한 안전한 주거 공간을 제공합니다.</p>
+                    <ul>
+                        <li>설립: 2024년</li>
+                        <li>본사: 서울 마포구</li>
+                        <li>사업: 글로벌 기숙사 운영</li>
+                    </ul>
+                </div>
+                
+                <div class="ir-card">
+                    <div class="ir-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>성장 전략</h3>
+                    <p>홍대 1호점을 시작으로 서울 주요 지역 확장 및 해외 진출을 계획하고 있습니다.</p>
+                    <ul>
+                        <li>홍대 1호점 (20베드)</li>
+                        <li>성수, 강남 확장 계획</li>
+                        <li>일본, 대만 진출 목표</li>
+                    </ul>
+                </div>
+                
+                <div class="ir-card">
+                    <div class="ir-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>투자 유치</h3>
+                    <p>성장을 위한 파트너를 찾고 있습니다. 자세한 정보는 IR 문의를 통해 확인하세요.</p>
+                    <ul>
+                        <li>Series A 준비중</li>
+                        <li>전략적 투자자 환영</li>
+                        <li>IR 문의: ir@novadorm.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IR 문의 섹션 -->
+    <section id="ir-contact" class="ir-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">IR 문의</h2>
+                <p class="section-subtitle">투자 관련 문의를 남겨주세요</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>연락처</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>이메일</h4>
+                            <p>ir@novadorm.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>전화</h4>
+                            <p>02-1234-5678</p>
+                            <small>내선 2번</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>업무시간</h4>
+                            <p>평일 09:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="ir-form" id="irForm">
+                    <div class="form-group">
+                        <label for="company">회사명</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">담당자명</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="type">문의 유형</label>
+                        <select id="type" name="type" required>
+                            <option value="">선택하세요</option>
+                            <option value="investment">투자 문의</option>
+                            <option value="partnership">제휴 문의</option>
+                            <option value="information">정보 요청</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">내용</label>
+                        <textarea id="message" name="message" rows="5" placeholder="문의하실 내용을 입력해주세요."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        문의 보내기
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>노바돔</h3>
+                    <p>청년들을 위한 안전한 글로벌 기숙사</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>IR 연락처</h3>
+                    <p>Email: ir@novadorm.com</p>
+                    <p>Phone: 02-1234-5678 (내선 2번)</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>바로가기</h3>
+                    <p><a href="index.html">홈페이지</a></p>
+                    <p><a href="#ir-info">IR 정보</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 노바돔. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
